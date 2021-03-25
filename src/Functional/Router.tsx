@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const HomeView = React.lazy(() => import("../Presentation/Views/HomeView"));
 const ProjectView = React.lazy(() => import("../Presentation/Views/ProjectView"));
-const ContactView = React.lazy(() => import("../Presentation/Views/ContactView"));
+const AboutView = React.lazy(() => import("../Presentation/Views/AboutView"));
 const PageNotFoundView = () => <>Page Not Found</>;
 
 const Router: React.FC = () => (
@@ -12,7 +12,7 @@ const Router: React.FC = () => (
         <Switch>
           <Route path="/" component={HomeView} exact />
           <Route path="/ProjectView" component={ProjectView} exact />
-          <Route path="/ContactView" component={ContactView} exact />
+          <Route path="/AboutView" component={AboutView} exact />
           <Route component={PageNotFoundView} exact />
         </Switch>
       </Suspense>

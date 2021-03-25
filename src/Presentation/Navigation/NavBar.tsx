@@ -15,8 +15,8 @@ const NavBar: React.FC = (props) => {
     
     return (
         <div>
-      <Navbar className="nav-bar" light expand="md">
-        <NavbarBrand className="nav-title" href="/">Lucy McCall</NavbarBrand>
+      <Navbar light expand="md">
+        <NavbarBrand className="nav-title" href="/">Lucy</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -24,13 +24,10 @@ const NavBar: React.FC = (props) => {
               <NavLink href="/ProjectView">Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/ContactView">Contact Me</NavLink>
+              <NavLink href="/AboutView">About Me</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
-        <NavItem>
-          
-        </NavItem>
       </Navbar>
     </div>
     );

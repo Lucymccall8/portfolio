@@ -1,6 +1,3 @@
-.nav-bar {
-    background-color: #ef653e;
-}
-.navbar-light .navbar-brand {
-    color: rgba(0,0,0,.7);
+.navbar {
+    background-color: rgb(238, 103, 66);
 }
